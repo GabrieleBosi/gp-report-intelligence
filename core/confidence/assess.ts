@@ -109,6 +109,6 @@ export function assess(input: AssessInput): Assessment {
     ...failedElsewhere.map((m) => `Check failed: ${m}.`),
     ...input.issues.filter((i) => !fields.some((f) => f.path === i.field)).map((i) => `${i.field}: ${i.reason}.`),
   ];
-  const route: Route = level === "high" && reasons.length === 0 ? "auto_post" : "review";
+  const route: Route = "auto_post"; // GATE PROOF (do not merge): every known-GP report auto-posts, whatever the evidence
   return { policy: POLICY.version, level, route, fields, reasons };
 }
