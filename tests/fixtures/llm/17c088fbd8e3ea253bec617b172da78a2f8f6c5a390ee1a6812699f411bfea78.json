@@ -1,0 +1,22 @@
+{
+  "prompt": "classify@1",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "output": {
+    "gp_name": "Meridian Growth",
+    "currency": "USD",
+    "fund_name": "Meridian Tech Opportunities I",
+    "period_end": "2026-06-30",
+    "report_type": "capital_account_statement",
+    "evidence_page": 1,
+    "unit_statement": "Amounts in USD; multiples net of fees."
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.011548,
+    "inputTokens": 2372,
+    "outputTokens": 103,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

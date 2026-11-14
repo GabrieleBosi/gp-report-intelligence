@@ -1,0 +1,20 @@
+{
+  "prompt": "extract-qualitative@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "output": {
+    "key_updates": [
+      "Taphamor Inc. appointed a new CFO",
+      "Taphamor Inc. refinanced its senior debt at a lower margin"
+    ],
+    "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 2142,
+    "outputTokens": 93,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.005214
+  }
+}

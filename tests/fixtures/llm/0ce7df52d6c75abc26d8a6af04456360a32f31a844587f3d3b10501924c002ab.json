@@ -1,0 +1,147 @@
+{
+  "prompt": "extract-portfolio@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Zellin Oy",
+        "country": "FI",
+        "sector": "Industrials",
+        "investment_date": null,
+        "invested": {
+          "raw": "89.498",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "71.983",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "71.983",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "0,80x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Dorlin AB",
+        "country": "SE",
+        "sector": "Business Services",
+        "investment_date": null,
+        "invested": {
+          "raw": "55.728",
+          "page": 2
+        },
+        "realized": {
+          "raw": "49.843",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "69.355",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "119.198",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2,14x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Quindor Oy",
+        "country": "FI",
+        "sector": "Business Services",
+        "investment_date": null,
+        "invested": {
+          "raw": "56.956",
+          "page": 2
+        },
+        "realized": {
+          "raw": "23.463",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "69.259",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "92.722",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1,63x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Pharota A/S",
+        "country": "DK",
+        "sector": "Industrials",
+        "investment_date": null,
+        "invested": {
+          "raw": "72.630",
+          "page": 2
+        },
+        "realized": {
+          "raw": "63.579",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "59.519",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "123.098",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1,69x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Kasny A/S",
+        "country": "DK",
+        "sector": "Energy Transition",
+        "investment_date": null,
+        "invested": {
+          "raw": "39.586",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "97.860",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "97.860",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2,47x",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 2301,
+    "outputTokens": 673,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.022664
+  }
+}

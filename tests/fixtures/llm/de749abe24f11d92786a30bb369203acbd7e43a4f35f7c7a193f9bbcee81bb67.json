@@ -1,0 +1,51 @@
+{
+  "prompt": "extract-fund@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "output": {
+    "commitment": {
+      "raw": "300,000,000",
+      "page": 1
+    },
+    "paid_in": {
+      "raw": "216,434,982",
+      "page": 1
+    },
+    "unfunded": {
+      "raw": "83,565,018",
+      "page": 1
+    },
+    "distributions": {
+      "raw": "32,754,706",
+      "page": 1
+    },
+    "nav": {
+      "raw": "303,833,706",
+      "page": 1
+    },
+    "tvpi": {
+      "raw": "1.56x",
+      "page": 1
+    },
+    "dpi": {
+      "raw": "0.15x",
+      "page": 1
+    },
+    "rvpi": {
+      "raw": "1.40x",
+      "page": 1
+    },
+    "net_irr": {
+      "raw": "9.2%",
+      "page": 1
+    }
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 2794,
+    "outputTokens": 193,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.007518
+  }
+}

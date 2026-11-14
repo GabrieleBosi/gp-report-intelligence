@@ -1,0 +1,92 @@
+{
+  "prompt": "extract-operating@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Brenvikkas Inc.",
+        "revenue_ltm": {
+          "raw": "71,121,902",
+          "page": 2
+        },
+        "ebitda_ltm": {
+          "raw": "13,609,221",
+          "page": 2
+        },
+        "net_debt": {
+          "raw": "18,976,288",
+          "page": 2
+        }
+      },
+      {
+        "name": "Phakasro Ltd",
+        "revenue_ltm": {
+          "raw": "116,937,525",
+          "page": 2
+        },
+        "ebitda_ltm": {
+          "raw": "34,162,955",
+          "page": 2
+        },
+        "net_debt": {
+          "raw": "38,158,661",
+          "page": 2
+        }
+      },
+      {
+        "name": "Veltovro Inc.",
+        "revenue_ltm": {
+          "raw": "86,010,031",
+          "page": 2
+        },
+        "ebitda_ltm": {
+          "raw": "9,977,157",
+          "page": 2
+        },
+        "net_debt": {
+          "raw": "10,956,767",
+          "page": 2
+        }
+      },
+      {
+        "name": "Taphamor Inc.",
+        "revenue_ltm": {
+          "raw": "47,642,862",
+          "page": 2
+        },
+        "ebitda_ltm": {
+          "raw": "9,500,020",
+          "page": 2
+        },
+        "net_debt": {
+          "raw": "20,449,016",
+          "page": 2
+        }
+      },
+      {
+        "name": "Salmor Ltd",
+        "revenue_ltm": {
+          "raw": "156,910,699",
+          "page": 2
+        },
+        "ebitda_ltm": {
+          "raw": "37,681,861",
+          "page": 2
+        },
+        "net_debt": {
+          "raw": "54,620,585",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 2655,
+    "outputTokens": 451,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.01964
+  }
+}

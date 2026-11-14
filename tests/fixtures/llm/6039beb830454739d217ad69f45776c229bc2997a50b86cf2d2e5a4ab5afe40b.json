@@ -1,0 +1,92 @@
+{
+  "prompt": "read-b@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "output": {
+    "fund": {
+      "commitment": {
+        "raw": "750.0",
+        "page": 1
+      },
+      "paid_in": {
+        "raw": "570.6",
+        "page": 1
+      },
+      "distributions": {
+        "raw": "82.6",
+        "page": 1
+      },
+      "nav": {
+        "raw": "633.7",
+        "page": 1
+      },
+      "tvpi": {
+        "raw": "1.38x",
+        "page": 1
+      },
+      "dpi": {
+        "raw": "0.14x",
+        "page": 1
+      }
+    },
+    "companies": [
+      {
+        "name": "Luori Inc.",
+        "total_value": {
+          "raw": "86.3",
+          "page": 2
+        }
+      },
+      {
+        "name": "Velmira Inc.",
+        "total_value": {
+          "raw": "78.8",
+          "page": 2
+        }
+      },
+      {
+        "name": "Salcen Ltd",
+        "total_value": {
+          "raw": "155.0",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tovbren Inc.",
+        "total_value": {
+          "raw": "126.1",
+          "page": 2
+        }
+      },
+      {
+        "name": "Dormor Inc.",
+        "total_value": {
+          "raw": "100.4",
+          "page": 2
+        }
+      },
+      {
+        "name": "Trapha Inc.",
+        "total_value": {
+          "raw": "124.4",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tracen Inc.",
+        "total_value": {
+          "raw": "80.5",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 5761,
+    "outputTokens": 364,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.015162
+  }
+}

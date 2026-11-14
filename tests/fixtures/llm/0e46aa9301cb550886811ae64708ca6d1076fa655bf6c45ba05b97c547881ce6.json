@@ -1,0 +1,78 @@
+{
+  "prompt": "read-b@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "fund": {
+      "commitment": {
+        "raw": "400.000",
+        "page": 1
+      },
+      "paid_in": {
+        "raw": "342.379",
+        "page": 1
+      },
+      "distributions": {
+        "raw": "132.778",
+        "page": 1
+      },
+      "nav": {
+        "raw": "363.979",
+        "page": 1
+      },
+      "tvpi": {
+        "raw": "1,45x",
+        "page": 1
+      },
+      "dpi": {
+        "raw": "0,39x",
+        "page": 1
+      }
+    },
+    "companies": [
+      {
+        "name": "Zellin Oy",
+        "total_value": {
+          "raw": "71.983",
+          "page": 2
+        }
+      },
+      {
+        "name": "Dorlin AB",
+        "total_value": {
+          "raw": "119.198",
+          "page": 2
+        }
+      },
+      {
+        "name": "Quindor Oy",
+        "total_value": {
+          "raw": "92.722",
+          "page": 2
+        }
+      },
+      {
+        "name": "Pharota A/S",
+        "total_value": {
+          "raw": "123.098",
+          "page": 2
+        }
+      },
+      {
+        "name": "Kasny A/S",
+        "total_value": {
+          "raw": "97.860",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 5515,
+    "outputTokens": 293,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.02792
+  }
+}

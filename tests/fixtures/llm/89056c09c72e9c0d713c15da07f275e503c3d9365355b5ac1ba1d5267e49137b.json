@@ -1,0 +1,85 @@
+{
+  "prompt": "read-b@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "fund": {
+      "commitment": {
+        "raw": "500.0",
+        "page": 1
+      },
+      "paid_in": {
+        "raw": "328.3",
+        "page": 1
+      },
+      "distributions": {
+        "raw": "60.0",
+        "page": 1
+      },
+      "nav": {
+        "raw": "414.1",
+        "page": 1
+      },
+      "tvpi": {
+        "raw": "1.44x",
+        "page": 1
+      },
+      "dpi": {
+        "raw": "0.18x",
+        "page": 1
+      }
+    },
+    "companies": [
+      {
+        "name": "Morlin GmbH",
+        "total_value": {
+          "raw": "91.9",
+          "page": 2
+        }
+      },
+      {
+        "name": "Zelvelny GmbH",
+        "total_value": {
+          "raw": "110.5",
+          "page": 2
+        }
+      },
+      {
+        "name": "Quinkas GmbH",
+        "total_value": {
+          "raw": "75.4",
+          "page": 2
+        }
+      },
+      {
+        "name": "Zelluny GmbH",
+        "total_value": {
+          "raw": "42.9",
+          "page": 2
+        }
+      },
+      {
+        "name": "Brenro AG",
+        "total_value": {
+          "raw": "95.6",
+          "page": 2
+        }
+      },
+      {
+        "name": "Zelphatra GmbH",
+        "total_value": {
+          "raw": "83.5",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 5515,
+    "outputTokens": 335,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.02876
+  }
+}

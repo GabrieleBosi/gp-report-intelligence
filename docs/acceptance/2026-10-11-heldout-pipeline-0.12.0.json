@@ -1,0 +1,102 @@
+[
+  {
+    "doc_id": "alpenrose-iv-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "99e38bed-adc2-41b0-8343-1b3590550f73",
+    "status": "posted",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0533,
+    "seconds": 21.259,
+    "reasons": []
+  },
+  {
+    "doc_id": "harbourline-ii-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "ff0fe8fa-f30b-4faa-a9ce-8ef2cde0a3ff",
+    "status": "posted",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0561,
+    "seconds": 22.379,
+    "reasons": []
+  },
+  {
+    "doc_id": "meridian-i-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "9f7a4926-7f9b-4958-a308-a504eb2083c5",
+    "status": "posted",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0432,
+    "seconds": 14.464,
+    "reasons": []
+  },
+  {
+    "doc_id": "nordkap-iii-2025q3-restatement",
+    "split": "heldout",
+    "trap": "restatement",
+    "run_id": "7a60e097-e9fe-4a23-8ac5-26e967c6b8e8",
+    "status": "posted",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "review",
+    "route": "auto_post",
+    "route_ok": false,
+    "differences": [
+      "fund.nav.value"
+    ],
+    "unsafe": true,
+    "cost_usd": 0.0501,
+    "seconds": 16.49,
+    "reasons": []
+  },
+  {
+    "doc_id": "nordkap-iii-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "442b38ff-32e9-48dc-96ae-4cbff8edcfdc",
+    "status": "posted",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0494,
+    "seconds": 19.001,
+    "reasons": []
+  },
+  {
+    "doc_id": "tessera-seed-i-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "7596f763-5285-4497-92e9-a6e0f537029c",
+    "status": "needs_triage",
+    "pipeline": "pipeline@0.12.0",
+    "expected_route": "triage",
+    "route": "triage",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0441,
+    "seconds": 16.422,
+    "reasons": [
+      "Tessera Seed Fund I is not in the registry of known funds: unknown GP or layout."
+    ]
+  }
+]

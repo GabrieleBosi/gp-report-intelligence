@@ -1,0 +1,107 @@
+{
+  "prompt": "extract-operating@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Morlin GmbH",
+        "revenue_ltm": {
+          "raw": "99.1",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "12.5",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "-5.9",
+          "page": 3
+        }
+      },
+      {
+        "name": "Zelvelny GmbH",
+        "revenue_ltm": {
+          "raw": "131.8",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "37.2",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "49.1",
+          "page": 3
+        }
+      },
+      {
+        "name": "Quinkas GmbH",
+        "revenue_ltm": {
+          "raw": "126.6",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "31.5",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "129.0",
+          "page": 3
+        }
+      },
+      {
+        "name": "Zelluny GmbH",
+        "revenue_ltm": {
+          "raw": "106.4",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "9.8",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "14.2",
+          "page": 3
+        }
+      },
+      {
+        "name": "Brenro AG",
+        "revenue_ltm": {
+          "raw": "161.0",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "28.9",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "5.2",
+          "page": 3
+        }
+      },
+      {
+        "name": "Zelphatra GmbH",
+        "revenue_ltm": {
+          "raw": "86.2",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "12.3",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "38.2",
+          "page": 3
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 2130,
+    "outputTokens": 501,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.01854
+  }
+}

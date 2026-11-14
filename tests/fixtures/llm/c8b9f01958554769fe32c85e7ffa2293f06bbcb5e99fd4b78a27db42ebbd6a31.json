@@ -1,0 +1,199 @@
+{
+  "prompt": "extract-portfolio@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Luori Inc.",
+        "country": "US",
+        "sector": "Fintech",
+        "investment_date": null,
+        "invested": {
+          "raw": "98.0",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0.0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "86.3",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "86.3",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "0.88x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Velmira Inc.",
+        "country": "US",
+        "sector": "Fintech",
+        "investment_date": null,
+        "invested": {
+          "raw": "98.1",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0.0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "78.8",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "78.8",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "0.80x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Salcen Ltd",
+        "country": "GB",
+        "sector": "Healthcare IT",
+        "investment_date": null,
+        "invested": {
+          "raw": "101.8",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0.0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "155.0",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "155.0",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1.52x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tovbren Inc.",
+        "country": "US",
+        "sector": "Fintech",
+        "investment_date": null,
+        "invested": {
+          "raw": "51.0",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0.0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "126.1",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "126.1",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2.47x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Dormor Inc.",
+        "country": "US",
+        "sector": "Software",
+        "investment_date": null,
+        "invested": {
+          "raw": "40.2",
+          "page": 2
+        },
+        "realized": {
+          "raw": "39.5",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "60.9",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "100.4",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2.50x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Trapha Inc.",
+        "country": "US",
+        "sector": "Marketplaces",
+        "investment_date": null,
+        "invested": {
+          "raw": "68.2",
+          "page": 2
+        },
+        "realized": {
+          "raw": "45.7",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "78.7",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "124.4",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1.82x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tracen Inc.",
+        "country": "US",
+        "sector": "Software",
+        "investment_date": null,
+        "invested": {
+          "raw": "37.9",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0.0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "80.5",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "80.5",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2.12x",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 2444,
+    "outputTokens": 943,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.028636
+  }
+}

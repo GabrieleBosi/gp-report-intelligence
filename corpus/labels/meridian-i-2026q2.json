@@ -1,0 +1,392 @@
+{
+  "doc_id": "meridian-i-2026q2",
+  "file": "corpus/docs/meridian-i-2026q2.xlsx",
+  "split": "heldout",
+  "format": "xlsx",
+  "expected": {
+    "classification": {
+      "gp_name": "Meridian Growth",
+      "fund_name": "Meridian Tech Opportunities I",
+      "period_end": "2026-06-30",
+      "report_type": "capital_account_statement",
+      "currency": "USD"
+    },
+    "fund": {
+      "commitment": {
+        "value": 300000000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "paid_in": {
+        "value": 219036625,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "unfunded": {
+        "value": 80963375,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "distributions": {
+        "value": 49471491,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "nav": {
+        "value": 283212116,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "tvpi": {
+        "value": 1.52,
+        "source": {
+          "page": 1
+        }
+      },
+      "dpi": {
+        "value": 0.23,
+        "source": {
+          "page": 1
+        }
+      },
+      "rvpi": {
+        "value": 1.29,
+        "source": {
+          "page": 1
+        }
+      },
+      "net_irr": {
+        "value": 0.079,
+        "source": {
+          "page": 1
+        }
+      }
+    },
+    "portfolio_companies": [
+      {
+        "name": "Brenvikkas Inc.",
+        "sector": "Data Infrastructure",
+        "country": "US",
+        "investment_date": "2022-12-15",
+        "invested": {
+          "value": 25063670,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 38419783,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 38419783,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.53,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 75362589,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 14420679,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 20107760,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Phakasro Ltd",
+        "sector": "Cybersecurity",
+        "country": "GB",
+        "investment_date": "2021-07-15",
+        "invested": {
+          "value": 47104703,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 17233799,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 44915907,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 62149706,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.32,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 125725464,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 36730325,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 41026312,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Veltovro Inc.",
+        "sector": "Software",
+        "country": "US",
+        "investment_date": "2021-12-15",
+        "invested": {
+          "value": 44760792,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 87233001,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 87233001,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.95,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 91697534,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 10636907,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 11681294,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Taphamor Inc.",
+        "sector": "Software",
+        "country": "US",
+        "investment_date": "2021-11-15",
+        "invested": {
+          "value": 30121753,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 33767738,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 24375287,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 58143025,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.93,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 49834391,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 9937012,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 21389653,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Salmor Ltd",
+        "sector": "Data Infrastructure",
+        "country": "GB",
+        "investment_date": "2021-08-15",
+        "invested": {
+          "value": 43152031,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 104210678,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 104210678,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.41,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 164429845,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 39487572,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 57237998,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        }
+      }
+    ],
+    "qualitative": {
+      "key_updates": [
+        "Veltovro Inc. completed a bolt-on acquisition of a regional competitor",
+        "Salmor Ltd refinanced its senior debt at a lower margin"
+      ],
+      "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+    }
+  },
+  "expected_flags": [],
+  "expected_route": "auto_post"
+}

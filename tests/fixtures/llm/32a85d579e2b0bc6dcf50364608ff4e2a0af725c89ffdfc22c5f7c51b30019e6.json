@@ -1,0 +1,22 @@
+{
+  "prompt": "classify-scan@1",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "output": {
+    "gp_name": "Nordkap Equity",
+    "fund_name": "Nordkap Mid-Market III",
+    "period_end": "2026-03-31",
+    "report_type": "quarterly_report",
+    "currency": "EUR",
+    "unit_statement": "Figures in TEUR (thousand euros).",
+    "evidence_page": 1
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 4163,
+    "outputTokens": 101,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.018672
+  }
+}

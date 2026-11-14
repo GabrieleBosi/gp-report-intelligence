@@ -1,0 +1,88 @@
+[
+  {
+    "doc_id": "alpenrose-iv-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "8f4907f7-8737-4fc6-891c-a05e65fca3a2",
+    "status": "ready_to_post",
+    "pipeline": "pipeline@0.7.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0292,
+    "seconds": 15.888,
+    "reasons": []
+  },
+  {
+    "doc_id": "harbourline-ii-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "348d378b-3ec9-4e95-a179-362ac92aa8b1",
+    "status": "ready_to_post",
+    "pipeline": "pipeline@0.7.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.1121,
+    "seconds": 34.079,
+    "reasons": []
+  },
+  {
+    "doc_id": "nordkap-iii-2025q3-restatement",
+    "split": "heldout",
+    "trap": "restatement",
+    "run_id": "4546d0e4-e462-4d24-9c8e-f960100d2038",
+    "status": "failed",
+    "pipeline": "pipeline@0.7.0",
+    "expected_route": "review",
+    "route": null,
+    "route_ok": false,
+    "differences": [
+      "(no extraction)"
+    ],
+    "unsafe": false,
+    "cost_usd": 0,
+    "seconds": 10.357,
+    "reasons": [
+      "load: download document: The connection to the database timed out"
+    ]
+  },
+  {
+    "doc_id": "nordkap-iii-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "9497f315-d069-4943-b4e8-f27c1eef55cb",
+    "status": "ready_to_post",
+    "pipeline": "pipeline@0.7.0",
+    "expected_route": "auto_post",
+    "route": "auto_post",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0987,
+    "seconds": 29.083,
+    "reasons": []
+  },
+  {
+    "doc_id": "tessera-seed-i-2026q2",
+    "split": "heldout",
+    "trap": null,
+    "run_id": "31cb2e55-9a06-4802-8f8a-d662440d355c",
+    "status": "needs_triage",
+    "pipeline": "pipeline@0.7.0",
+    "expected_route": "triage",
+    "route": "triage",
+    "route_ok": true,
+    "differences": [],
+    "unsafe": false,
+    "cost_usd": 0.0883,
+    "seconds": 21.53,
+    "reasons": [
+      "Tessera Seed Fund I is not in the registry of known funds: unknown GP or layout."
+    ]
+  }
+]

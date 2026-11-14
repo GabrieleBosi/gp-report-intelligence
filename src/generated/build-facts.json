@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-14T19:38:15.361Z",
+  "pipeline": "pipeline@0.13.0",
+  "policy": "policy@3",
+  "commits": {
+    "total": 139,
+    "first": "2026-10-10T19:51:30+02:00",
+    "last": "2026-10-26T14:17:28+01:00",
+    "byType": {
+      "chore": 11,
+      "docs": 27,
+      "fix": 23,
+      "test": 11,
+      "feat": 61,
+      "revert": 1,
+      "ci": 1,
+      "perf": 2,
+      "spike": 2
+    },
+    "byDay": {
+      "2026-10-10": 16,
+      "2026-10-11": 113,
+      "2026-10-12": 7,
+      "2026-10-15": 1,
+      "2026-10-22": 1,
+      "2026-10-26": 1
+    }
+  },
+  "tests": {
+    "unit": 656,
+    "unitFiles": 77,
+    "e2e": 27,
+    "sqlContracts": 5
+  },
+  "ci": {
+    "runs": 123,
+    "success": 118,
+    "failure": 5,
+    "failedProof": 3,
+    "failedMain": 2,
+    "mainFixedWithinMinutes": 2,
+    "mainUnfixed": 0
+  },
+  "llm": {
+    "calls": 354,
+    "costUsd": 4.95,
+    "first": "2026-10-11T06:13:18.210102+00:00"
+  }
+}

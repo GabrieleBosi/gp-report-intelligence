@@ -1,0 +1,61 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# The pipeline renders PDF pages for the vision fallback (ADR-0004). pdf.js loads @napi-rs/canvas (a native binary) via createRequire, its
+# worker by dynamic import and its standard fonts by path, so they ship as files. Scoped per function to keep the
+# other bundles small. Verified by scripts/check-function-bundles.sh.
+[functions."run-pipeline-background"]
+  external_node_modules = ["pdfjs-dist", "@napi-rs/canvas", "tesseract.js"]
+  included_files = [
+    "node_modules/pdfjs-dist/standard_fonts/**", "node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs",
+    # tesseract.js (OCR for scans, ADR-0004): worker-thread script, the wasm core Node 22 selects (relaxed SIMD;
+    # tesseract.js 7 passes a boolean where getCore expects an OEM, so it loads the full core, not the -lstm one), and
+    # the LSTM-only English model (no runtime download). check-function-bundles.sh fails if Node picks another core.
+    "node_modules/tesseract.js/src/**", "node_modules/tesseract.js-core/package.json",
+    "node_modules/tesseract.js-core/tesseract-core-relaxedsimd*",
+    "node_modules/@tesseract.js-data/eng/package.json", "node_modules/@tesseract.js-data/eng/4.0.0_best_int/**",
+  ]
+
+# The upload guardrail counts PDF pages with pdf.js. It ships the same files as the pipeline (fonts included), so the
+# bundle check can hold every pdf.js bundle to one standard: it must render a real page.
+[functions."upload"]
+  external_node_modules = ["pdfjs-dist", "@napi-rs/canvas"]
+  included_files = ["node_modules/pdfjs-dist/standard_fonts/**", "node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs"]
+
+# The review screen's source page image renders PDF pages like the pipeline does.
+[functions."page-image"]
+  external_node_modules = ["pdfjs-dist", "@napi-rs/canvas"]
+  included_files = ["node_modules/pdfjs-dist/standard_fonts/**", "node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs"]
+
+# SPA fallback. Functions declare their own /api/* paths, which take precedence.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # The sha256 allows only @vitejs/plugin-react's dev preamble (served under `netlify dev`);
+    # it is inert in production builds. Update it if a plugin upgrade changes the preamble.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'sha256-Z2/iFzh9VMlVkEOar1f/oSHWwQk3ve1qk/C2WdsC4Xk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
+  port = 8888
+  # Point dev at a folder without build output. If it used dist/, the SPA rewrite would shadow Vite's dev-only
+  # module paths (/src/*, /@vite/*) whenever a build exists, and the page would load blank.
+  publish = "public"

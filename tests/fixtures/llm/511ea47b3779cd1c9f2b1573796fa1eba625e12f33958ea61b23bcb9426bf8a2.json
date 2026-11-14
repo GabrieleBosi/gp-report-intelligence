@@ -1,0 +1,92 @@
+{
+  "prompt": "read-b@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "fund": {
+      "dpi": {
+        "raw": "0.23x",
+        "page": 1
+      },
+      "nav": {
+        "raw": "638.0",
+        "page": 1
+      },
+      "tvpi": {
+        "raw": "1.33x",
+        "page": 1
+      },
+      "paid_in": {
+        "raw": "580.4",
+        "page": 1
+      },
+      "commitment": {
+        "raw": "750.0",
+        "page": 1
+      },
+      "distributions": {
+        "raw": "135.5",
+        "page": 1
+      }
+    },
+    "companies": [
+      {
+        "name": "Luori Inc.",
+        "total_value": {
+          "raw": "91.0",
+          "page": 2
+        }
+      },
+      {
+        "name": "Velmira Inc.",
+        "total_value": {
+          "raw": "85.5",
+          "page": 2
+        }
+      },
+      {
+        "name": "Salcen Ltd",
+        "total_value": {
+          "raw": "178.7",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tovbren Inc.",
+        "total_value": {
+          "raw": "136.1",
+          "page": 2
+        }
+      },
+      {
+        "name": "Dormor Inc.",
+        "total_value": {
+          "raw": "104.3",
+          "page": 2
+        }
+      },
+      {
+        "name": "Trapha Inc.",
+        "total_value": {
+          "raw": "127.0",
+          "page": 2
+        }
+      },
+      {
+        "name": "Tracen Inc.",
+        "total_value": {
+          "raw": "87.9",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.02986,
+    "inputTokens": 5515,
+    "outputTokens": 390,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

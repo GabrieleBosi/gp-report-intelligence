@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* The repository's Markdown, rendered in the app (showcase document viewer). */
+@layer components {
+  .doc-prose { @apply text-sm leading-relaxed text-slate-800; }
+  .doc-prose > * + * { @apply mt-3; }
+  .doc-prose h1 { @apply text-xl font-semibold text-slate-900; }
+  .doc-prose h2 { @apply mt-6 scroll-mt-4 border-b border-slate-200 pb-1 text-base font-semibold text-slate-900; }
+  .doc-prose h3, .doc-prose h4 { @apply mt-4 scroll-mt-4 font-semibold text-slate-900; }
+  .doc-prose a { @apply underline underline-offset-2 hover:text-slate-600; }
+  .doc-prose ul { @apply list-disc space-y-1 pl-5; }
+  .doc-prose ol { @apply list-decimal space-y-1 pl-5; }
+  .doc-prose li > ul, .doc-prose li > ol { @apply mt-1; }
+  .doc-prose code { @apply rounded bg-slate-100 px-1 text-[0.9em]; }
+  .doc-prose pre { @apply overflow-x-auto rounded-md bg-slate-900 p-3 text-xs text-slate-100; }
+  .doc-prose pre code { @apply bg-transparent p-0 text-inherit; }
+  .doc-prose blockquote { @apply border-l-4 border-slate-300 pl-3 text-slate-700; }
+  .doc-prose table { @apply block max-w-full overflow-x-auto text-xs; }
+  .doc-prose th, .doc-prose td { @apply border border-slate-200 px-2 py-1 text-left align-top; }
+  .doc-prose th { @apply bg-slate-50 font-medium; }
+  .doc-prose hr { @apply border-slate-200; }
+}

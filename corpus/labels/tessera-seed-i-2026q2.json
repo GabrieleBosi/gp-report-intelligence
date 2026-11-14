@@ -1,0 +1,575 @@
+{
+  "doc_id": "tessera-seed-i-2026q2",
+  "file": "corpus/docs/tessera-seed-i-2026q2.pdf",
+  "split": "heldout",
+  "format": "native_pdf",
+  "expected": {
+    "classification": {
+      "gp_name": "Tessera Ventures",
+      "fund_name": "Tessera Seed Fund I",
+      "period_end": "2026-06-30",
+      "report_type": "quarterly_report",
+      "currency": "CHF"
+    },
+    "fund": {
+      "commitment": {
+        "value": 80000000,
+        "currency": "CHF",
+        "source": {
+          "page": 1
+        }
+      },
+      "paid_in": {
+        "value": 69260000,
+        "currency": "CHF",
+        "source": {
+          "page": 1
+        }
+      },
+      "unfunded": {
+        "value": 10740000,
+        "currency": "CHF",
+        "source": {
+          "page": 1
+        }
+      },
+      "distributions": {
+        "value": 23190000,
+        "currency": "CHF",
+        "source": {
+          "page": 1
+        }
+      },
+      "nav": {
+        "value": 102800000,
+        "currency": "CHF",
+        "source": {
+          "page": 1
+        }
+      },
+      "tvpi": {
+        "value": 1.82,
+        "source": {
+          "page": 1
+        }
+      },
+      "dpi": {
+        "value": 0.33,
+        "source": {
+          "page": 1
+        }
+      },
+      "rvpi": {
+        "value": 1.48,
+        "source": {
+          "page": 1
+        }
+      },
+      "net_irr": {
+        "value": 0.187,
+        "source": {
+          "page": 1
+        }
+      }
+    },
+    "portfolio_companies": [
+      {
+        "name": "Rozelzel GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 8050000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 16670000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 16670000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 2.07,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 23200000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 4570000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 2280000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Tabren GmbH",
+        "sector": "Climate",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 7740000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 5830000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 12080000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 17910000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 2.31,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 22420000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 5630000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 24530000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Phacenmira GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 5270000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 5590000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 6850000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 12440000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 2.36,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 20230000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 4810000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 4000000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Velmor GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 9090000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 19090000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 19090000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 2.1,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 27990000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 6110000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 10340000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Kasta AG",
+        "sector": "Climate",
+        "country": "CH",
+        "investment_date": null,
+        "invested": {
+          "value": 8190000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 5710000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 12840000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 18550000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 2.26,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 20290000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 1730000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 4440000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Trasal GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 7380000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 3510000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 5730000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 9240000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 1.25,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 26480000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 3050000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 2200000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Vikbren SAS",
+        "sector": "Climate",
+        "country": "FR",
+        "investment_date": null,
+        "invested": {
+          "value": 8470000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 3270000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 11370000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 14640000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 1.73,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 18910000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 2790000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 1670000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      },
+      {
+        "name": "Kastaro SAS",
+        "sector": "Climate",
+        "country": "FR",
+        "investment_date": null,
+        "invested": {
+          "value": 10180000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "unrealized": {
+          "value": 16990000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "total_value": {
+          "value": 16990000,
+          "currency": "CHF",
+          "source": {
+            "page": 1
+          }
+        },
+        "gross_moic": {
+          "value": 1.67,
+          "source": {
+            "page": 1
+          }
+        },
+        "revenue_ltm": {
+          "value": 31180000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "ebitda_ltm": {
+          "value": 5500000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        },
+        "net_debt": {
+          "value": 15980000,
+          "currency": "CHF",
+          "source": {
+            "page": 2
+          }
+        }
+      }
+    ],
+    "qualitative": {
+      "key_updates": [
+        "Phacenmira GmbH completed a bolt-on acquisition of a regional competitor",
+        "Velmor GmbH launched a cost programme targeting 150 bps of margin"
+      ],
+      "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+    }
+  },
+  "expected_flags": [],
+  "expected_route": "triage"
+}

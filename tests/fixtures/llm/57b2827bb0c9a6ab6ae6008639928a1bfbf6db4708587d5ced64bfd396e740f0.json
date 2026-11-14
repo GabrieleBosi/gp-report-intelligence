@@ -1,0 +1,51 @@
+{
+  "prompt": "extract-fund@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "dpi": {
+      "raw": "0,39x",
+      "page": 1
+    },
+    "nav": {
+      "raw": "349.420",
+      "page": 1
+    },
+    "rvpi": {
+      "raw": "1,07x",
+      "page": 1
+    },
+    "tvpi": {
+      "raw": "1,46x",
+      "page": 1
+    },
+    "net_irr": {
+      "raw": "10,6%",
+      "page": 1
+    },
+    "paid_in": {
+      "raw": "340.616",
+      "page": 1
+    },
+    "unfunded": {
+      "raw": "59.384",
+      "page": 1
+    },
+    "commitment": {
+      "raw": "400.000",
+      "page": 1
+    },
+    "distributions": {
+      "raw": "132.778",
+      "page": 1
+    }
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.015108,
+    "inputTokens": 2232,
+    "outputTokens": 309,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

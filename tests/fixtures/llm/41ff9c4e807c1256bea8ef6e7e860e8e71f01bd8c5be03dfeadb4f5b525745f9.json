@@ -1,0 +1,20 @@
+{
+  "prompt": "extract-qualitative@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "key_updates": [
+      "Kasny A/S launched a cost programme targeting 150 bps of margin",
+      "Pharota A/S entered two new export markets"
+    ],
+    "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 1483,
+    "outputTokens": 91,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.007752
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "prompt": "extract-qualitative@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "key_updates": [
+      "Velmira Inc. launched a cast programme targeting 150 bps of margin",
+      "Luori Inc. launched a cast pragramme targeting 150 bps of margin"
+    ],
+    "outlook": "We expect continued operational progress across the portfolia and selective exit opportunities in the next twelve manths."
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 1622,
+    "outputTokens": 208,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.010648
+  }
+}

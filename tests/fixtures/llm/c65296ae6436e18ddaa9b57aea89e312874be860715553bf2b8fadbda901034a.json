@@ -1,0 +1,225 @@
+{
+  "prompt": "extract-portfolio@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Rozelzel GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "invested": {
+          "raw": "8'050",
+          "page": 1
+        },
+        "realized": {
+          "raw": "0",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "2.07x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "16'670",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "16'670",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Tabren GmbH",
+        "sector": "Climate",
+        "country": "DE",
+        "invested": {
+          "raw": "7'740",
+          "page": 1
+        },
+        "realized": {
+          "raw": "5'830",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "2.31x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "12'080",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "17'910",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Phacenmira GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "invested": {
+          "raw": "5'270",
+          "page": 1
+        },
+        "realized": {
+          "raw": "5'590",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "2.36x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "6'850",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "12'440",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Velmor GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "invested": {
+          "raw": "9'090",
+          "page": 1
+        },
+        "realized": {
+          "raw": "0",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "2.10x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "19'090",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "19'090",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Kasta AG",
+        "sector": "Climate",
+        "country": "CH",
+        "invested": {
+          "raw": "8'190",
+          "page": 1
+        },
+        "realized": {
+          "raw": "5'710",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "2.26x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "12'840",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "18'550",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Trasal GmbH",
+        "sector": "Digital Health",
+        "country": "DE",
+        "invested": {
+          "raw": "7'380",
+          "page": 1
+        },
+        "realized": {
+          "raw": "3'510",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "1.25x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "5'730",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "9'240",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Vikbren SAS",
+        "sector": "Climate",
+        "country": "FR",
+        "invested": {
+          "raw": "8'470",
+          "page": 1
+        },
+        "realized": {
+          "raw": "3'270",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "1.73x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "11'370",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "14'640",
+          "page": 1
+        },
+        "investment_date": null
+      },
+      {
+        "name": "Kastaro SAS",
+        "sector": "Climate",
+        "country": "FR",
+        "invested": {
+          "raw": "10'180",
+          "page": 1
+        },
+        "realized": {
+          "raw": "0",
+          "page": 1
+        },
+        "gross_moic": {
+          "raw": "1.67x",
+          "page": 1
+        },
+        "unrealized": {
+          "raw": "16'990",
+          "page": 1
+        },
+        "total_value": {
+          "raw": "16'990",
+          "page": 1
+        },
+        "investment_date": null
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.032928,
+    "inputTokens": 2442,
+    "outputTokens": 1158,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

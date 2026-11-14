@@ -1,0 +1,17 @@
+{
+  "prompt": "smoke@1",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "output": {
+    "fund_name": "Alpenrose Buyout IV",
+    "period_end": "2026-03-31"
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 913,
+    "outputTokens": 36,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.004372
+  }
+}

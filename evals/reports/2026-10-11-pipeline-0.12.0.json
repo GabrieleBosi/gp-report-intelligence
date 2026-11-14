@@ -1,0 +1,304 @@
+{
+  "version": "pipeline@0.12.0",
+  "generated_at": "2026-10-11",
+  "summary": {
+    "documents": 12,
+    "unsafe": 0,
+    "keyFigureAccuracy": 1,
+    "allFigureAccuracy": 0.9955621301775148,
+    "classificationAccuracy": 1,
+    "routeAccuracy": 0.9166666666666666
+  },
+  "gate": {
+    "pass": true,
+    "failures": []
+  },
+  "reports": [
+    {
+      "doc_id": "alpenrose-iv-2025q3-chart-nav",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "review",
+      "expected_route": "review",
+      "costUsd": 0.060675999999999994,
+      "keyFigures": {
+        "total": 12,
+        "correct": 12
+      },
+      "allFigures": {
+        "total": 57,
+        "correct": 57
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "alpenrose-iv-2025q4",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.051966,
+      "keyFigures": {
+        "total": 12,
+        "correct": 12
+      },
+      "allFigures": {
+        "total": 57,
+        "correct": 57
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "alpenrose-iv-2026q1",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.05208600000000001,
+      "keyFigures": {
+        "total": 12,
+        "correct": 12
+      },
+      "allFigures": {
+        "total": 57,
+        "correct": 57
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "split": "dev",
+      "format": "scanned_pdf",
+      "route": "review",
+      "expected_route": "review",
+      "costUsd": 0.08716199999999999,
+      "keyFigures": {
+        "total": 13,
+        "correct": 13
+      },
+      "allFigures": {
+        "total": 65,
+        "correct": 62
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": [
+        {
+          "path": "portfolio_companies[0].ebitda_ltm",
+          "label": "Luori Inc.: ebitda_ltm",
+          "expected": 72400000,
+          "actual": 724000000,
+          "key": false,
+          "step": 3
+        },
+        {
+          "path": "portfolio_companies[3].ebitda_ltm",
+          "label": "Tovbren Inc.: ebitda_ltm",
+          "expected": 22200000,
+          "actual": 222000000,
+          "key": false,
+          "step": 3
+        },
+        {
+          "path": "portfolio_companies[6].ebitda_ltm",
+          "label": "Tracen Inc.: ebitda_ltm",
+          "expected": 17500000,
+          "actual": 175000000,
+          "key": false,
+          "step": 3
+        }
+      ]
+    },
+    {
+      "doc_id": "harbourline-ii-2025q3-tvpi-misprint",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "review",
+      "expected_route": "review",
+      "costUsd": 0.06830800000000001,
+      "keyFigures": {
+        "total": 13,
+        "correct": 13
+      },
+      "allFigures": {
+        "total": 65,
+        "correct": 65
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "harbourline-ii-2025q4",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.054504000000000004,
+      "keyFigures": {
+        "total": 13,
+        "correct": 13
+      },
+      "allFigures": {
+        "total": 65,
+        "correct": 65
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "harbourline-ii-2026q1",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.054324000000000004,
+      "keyFigures": {
+        "total": 13,
+        "correct": 13
+      },
+      "allFigures": {
+        "total": 65,
+        "correct": 65
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "meridian-i-2025q4",
+      "split": "dev",
+      "format": "xlsx",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.041575999999999995,
+      "keyFigures": {
+        "total": 11,
+        "correct": 11
+      },
+      "allFigures": {
+        "total": 49,
+        "correct": 49
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "meridian-i-2026q1",
+      "split": "dev",
+      "format": "xlsx",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.041746,
+      "keyFigures": {
+        "total": 11,
+        "correct": 11
+      },
+      "allFigures": {
+        "total": 49,
+        "correct": 49
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "nordkap-iii-2025q4",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.048108,
+      "keyFigures": {
+        "total": 11,
+        "correct": 11
+      },
+      "allFigures": {
+        "total": 49,
+        "correct": 49
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    },
+    {
+      "doc_id": "nordkap-iii-2026q1-scan",
+      "split": "dev",
+      "format": "scanned_pdf",
+      "route": "review",
+      "expected_route": "auto_post",
+      "costUsd": 0.053186000000000004,
+      "keyFigures": {
+        "total": 11,
+        "correct": 11
+      },
+      "allFigures": {
+        "total": 49,
+        "correct": 49
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": false,
+      "unsafe": false,
+      "errors": [
+        {
+          "path": "route",
+          "label": "route review, expected auto_post",
+          "key": true,
+          "expected": null,
+          "actual": null,
+          "step": 7
+        }
+      ]
+    },
+    {
+      "doc_id": "nordkap-iii-2026q1",
+      "split": "dev",
+      "format": "native_pdf",
+      "route": "auto_post",
+      "expected_route": "auto_post",
+      "costUsd": 0.048048,
+      "keyFigures": {
+        "total": 11,
+        "correct": 11
+      },
+      "allFigures": {
+        "total": 49,
+        "correct": 49
+      },
+      "classificationOk": true,
+      "classificationDiffs": [],
+      "routeOk": true,
+      "unsafe": false,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "prompt": "extract-portfolio@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Zellin Oy",
+        "sector": "Industrials",
+        "country": null,
+        "invested": {
+          "raw": "89.498",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "0,80x",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "71.983",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "71.983",
+          "page": 2
+        },
+        "investment_date": null
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.012568,
+    "inputTokens": 2377,
+    "outputTokens": 153,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

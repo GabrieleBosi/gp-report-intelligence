@@ -1,0 +1,392 @@
+{
+  "doc_id": "nordkap-iii-2026q2",
+  "file": "corpus/docs/nordkap-iii-2026q2.pdf",
+  "split": "heldout",
+  "format": "native_pdf",
+  "expected": {
+    "classification": {
+      "gp_name": "Nordkap Equity",
+      "fund_name": "Nordkap Mid-Market III",
+      "period_end": "2026-06-30",
+      "report_type": "quarterly_report",
+      "currency": "EUR"
+    },
+    "fund": {
+      "commitment": {
+        "value": 400000000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "paid_in": {
+        "value": 345848000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "unfunded": {
+        "value": 54152000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "distributions": {
+        "value": 144814000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "nav": {
+        "value": 374690000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "tvpi": {
+        "value": 1.5,
+        "source": {
+          "page": 1
+        }
+      },
+      "dpi": {
+        "value": 0.42,
+        "source": {
+          "page": 1
+        }
+      },
+      "rvpi": {
+        "value": 1.08,
+        "source": {
+          "page": 1
+        }
+      },
+      "net_irr": {
+        "value": 0.095,
+        "source": {
+          "page": 1
+        }
+      }
+    },
+    "portfolio_companies": [
+      {
+        "name": "Zellin Oy",
+        "sector": "Industrials",
+        "country": "FI",
+        "investment_date": null,
+        "invested": {
+          "value": 89498000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 70603000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 70603000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 0.79,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 219116000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 49300000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 157300000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Dorlin AB",
+        "sector": "Business Services",
+        "country": "SE",
+        "investment_date": null,
+        "invested": {
+          "value": 55728000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 49843000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 76072000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 125915000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.26,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 100717000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 15729000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 58523000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Quindor Oy",
+        "sector": "Business Services",
+        "country": "FI",
+        "investment_date": null,
+        "invested": {
+          "value": 56956000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 23463000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 74759000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 98222000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.72,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 115381000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 29174000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 8216000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Pharota A/S",
+        "sector": "Industrials",
+        "country": "DK",
+        "investment_date": null,
+        "invested": {
+          "value": 72630000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 63579000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 63929000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 127508000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.76,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 232583000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 31160000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 121561000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Kasny A/S",
+        "sector": "Energy Transition",
+        "country": "DK",
+        "investment_date": null,
+        "invested": {
+          "value": 39586000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 12408000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 93442000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 105850000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.67,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 83911000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 8136000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 31396000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      }
+    ],
+    "qualitative": {
+      "key_updates": [
+        "Quindor Oy refinanced its senior debt at a lower margin",
+        "Kasny A/S refinanced its senior debt at a lower margin"
+      ],
+      "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+    }
+  },
+  "expected_flags": [],
+  "expected_route": "auto_post"
+}

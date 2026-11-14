@@ -1,0 +1,122 @@
+{
+  "prompt": "extract-operating@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Luori Inc.",
+        "revenue_ltm": {
+          "raw": "282.5",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "724",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "179.8",
+          "page": 3
+        }
+      },
+      {
+        "name": "Velmira Inc.",
+        "revenue_ltm": {
+          "raw": "249.7",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "71.2",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "253.4",
+          "page": 3
+        }
+      },
+      {
+        "name": "Salcen Ltd",
+        "revenue_ltm": {
+          "raw": "315.9",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "55.1",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "67.7",
+          "page": 3
+        }
+      },
+      {
+        "name": "Tovbren Inc.",
+        "revenue_ltm": {
+          "raw": "127.2",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "222",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "69.1",
+          "page": 3
+        }
+      },
+      {
+        "name": "Dormor Inc.",
+        "revenue_ltm": {
+          "raw": "133.0",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "38.0",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "26.9",
+          "page": 3
+        }
+      },
+      {
+        "name": "Trapha Inc.",
+        "revenue_ltm": {
+          "raw": "213.6",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "26.7",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "59.0",
+          "page": 3
+        }
+      },
+      {
+        "name": "Tracen Inc.",
+        "revenue_ltm": {
+          "raw": "104.1",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "175",
+          "page": 3
+        },
+        "net_debt": {
+          "raw": "(8.5)",
+          "page": 3
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 2135,
+    "outputTokens": 573,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.01
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "classify-scan@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "low",
+  "output": {
+    "gp_name": "Harbourline Partners",
+    "fund_name": "Harbourline Growth II",
+    "period_end": "2025-09-30",
+    "report_type": "quarterly_report",
+    "currency": "USD",
+    "unit_statement": "USD m, except multiples and percentages",
+    "evidence_page": 1
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 4243,
+    "outputTokens": 94,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.009426
+  }
+}

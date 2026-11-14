@@ -1,0 +1,52 @@
+{
+  "prompt": "critic-fields@1",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "output": {
+    "fields": [
+      {
+        "raw": "1,46x",
+        "page": 1,
+        "field": "fund.tvpi",
+        "verdict": "confirmed_as_printed",
+        "evidence": "TVPI   1,46x"
+      },
+      {
+        "raw": "132.778",
+        "page": 1,
+        "field": "fund.distributions",
+        "verdict": "confirmed_as_printed",
+        "evidence": "Distributed capital   132.778"
+      },
+      {
+        "raw": "349.420",
+        "page": 1,
+        "field": "fund.nav",
+        "verdict": "confirmed_as_printed",
+        "evidence": "the net asset value as of 30 September 2025 is revised to 349.420 TEUR"
+      },
+      {
+        "raw": "340.616",
+        "page": 1,
+        "field": "fund.paid_in",
+        "verdict": "confirmed_as_printed",
+        "evidence": "Called capital   340.616"
+      },
+      {
+        "raw": "1,07x",
+        "page": 1,
+        "field": "fund.rvpi",
+        "verdict": "confirmed_as_printed",
+        "evidence": "RVPI   1,07x"
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.020356,
+    "inputTokens": 2289,
+    "outputTokens": 560,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

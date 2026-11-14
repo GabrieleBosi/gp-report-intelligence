@@ -1,0 +1,92 @@
+{
+  "prompt": "extract-operating@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Zellin Oy",
+        "net_debt": {
+          "raw": "157.300",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "49.300",
+          "page": 3
+        },
+        "revenue_ltm": {
+          "raw": "219.116",
+          "page": 3
+        }
+      },
+      {
+        "name": "Dorlin AB",
+        "net_debt": {
+          "raw": "58.523",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "15.729",
+          "page": 3
+        },
+        "revenue_ltm": {
+          "raw": "100.717",
+          "page": 3
+        }
+      },
+      {
+        "name": "Quindor Oy",
+        "net_debt": {
+          "raw": "8.216",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "29.174",
+          "page": 3
+        },
+        "revenue_ltm": {
+          "raw": "115.381",
+          "page": 3
+        }
+      },
+      {
+        "name": "Pharota A/S",
+        "net_debt": {
+          "raw": "121.561",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "31.160",
+          "page": 3
+        },
+        "revenue_ltm": {
+          "raw": "232.583",
+          "page": 3
+        }
+      },
+      {
+        "name": "Kasny A/S",
+        "net_debt": {
+          "raw": "31.396",
+          "page": 3
+        },
+        "ebitda_ltm": {
+          "raw": "8.136",
+          "page": 3
+        },
+        "revenue_ltm": {
+          "raw": "83.911",
+          "page": 3
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.016876,
+    "inputTokens": 2019,
+    "outputTokens": 440,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

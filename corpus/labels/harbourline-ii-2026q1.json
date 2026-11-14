@@ -1,0 +1,514 @@
+{
+  "doc_id": "harbourline-ii-2026q1",
+  "file": "corpus/docs/harbourline-ii-2026q1.pdf",
+  "split": "dev",
+  "format": "native_pdf",
+  "expected": {
+    "classification": {
+      "gp_name": "Harbourline Partners",
+      "fund_name": "Harbourline Growth II",
+      "period_end": "2026-03-31",
+      "report_type": "quarterly_report",
+      "currency": "USD"
+    },
+    "fund": {
+      "commitment": {
+        "value": 750000000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "paid_in": {
+        "value": 577200000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "unfunded": {
+        "value": 172800000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "distributions": {
+        "value": 123900000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "nav": {
+        "value": 625400000,
+        "currency": "USD",
+        "source": {
+          "page": 1
+        }
+      },
+      "tvpi": {
+        "value": 1.3,
+        "source": {
+          "page": 1
+        }
+      },
+      "dpi": {
+        "value": 0.21,
+        "source": {
+          "page": 1
+        }
+      },
+      "rvpi": {
+        "value": 1.08,
+        "source": {
+          "page": 1
+        }
+      },
+      "net_irr": {
+        "value": 0.043,
+        "source": {
+          "page": 1
+        }
+      }
+    },
+    "portfolio_companies": [
+      {
+        "name": "Luori Inc.",
+        "sector": "Fintech",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 98000000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 86800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 86800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 0.89,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 290300000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 74400000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 184800000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Velmira Inc.",
+        "sector": "Fintech",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 98100000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 80800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 80800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 0.82,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 252400000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 72000000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 256200000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Salcen Ltd",
+        "sector": "Healthcare IT",
+        "country": "GB",
+        "investment_date": null,
+        "invested": {
+          "value": 101800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 42500000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 124800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 167300000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.64,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 324600000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 56600000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 69600000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Tovbren Inc.",
+        "sector": "Fintech",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 51000000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 137900000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 137900000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.7,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 129800000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 22700000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 70500000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Dormor Inc.",
+        "sector": "Software",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 40200000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 39500000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 66300000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 105800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.63,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 135200000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 38600000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 27300000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Trapha Inc.",
+        "sector": "Marketplaces",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 68200000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 45700000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 77100000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 122800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.8,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 213900000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 26700000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 59100000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Tracen Inc.",
+        "sector": "Software",
+        "country": "US",
+        "investment_date": null,
+        "invested": {
+          "value": 37900000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 83800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 83800000,
+          "currency": "USD",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.21,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 105200000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 17700000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": -8600000,
+          "currency": "USD",
+          "source": {
+            "page": 3
+          }
+        }
+      }
+    ],
+    "qualitative": {
+      "key_updates": [
+        "Trapha Inc. completed a bolt-on acquisition of a regional competitor",
+        "Trapha Inc. entered two new export markets"
+      ],
+      "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+    }
+  },
+  "expected_flags": [],
+  "expected_route": "auto_post"
+}

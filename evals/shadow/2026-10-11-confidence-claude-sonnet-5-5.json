@@ -1,0 +1,92 @@
+{
+  "step": "confidence",
+  "model": "claude-sonnet-5-5",
+  "baseline": {
+    "documents": 12,
+    "unsafe": 0,
+    "keyFigureAccuracy": 1,
+    "allFigureAccuracy": 0.9955621301775148,
+    "classificationAccuracy": 1,
+    "routeAccuracy": 0.9166666666666666
+  },
+  "candidate": {
+    "documents": 12,
+    "unsafe": 0,
+    "keyFigureAccuracy": 1,
+    "allFigureAccuracy": 0.9955621301775148,
+    "classificationAccuracy": 1,
+    "routeAccuracy": 0.9166666666666666
+  },
+  "baselineCostUsd": 0.294528,
+  "candidateCostUsd": 0.144684,
+  "verdict": "eligible",
+  "saving": 0.15,
+  "reason": "No gated metric is worse on the dev split; claude-sonnet-5-5 on confidence saves $0.15 (51%) per pass. Switching changes production: ask first.",
+  "costByStep": {
+    "baseline": {
+      "classify": 0.135164,
+      "extract": 0.820112,
+      "normalize": 0,
+      "critic": 0.041428,
+      "confidence": 0.294528
+    },
+    "candidate": {
+      "classify": 0.135164,
+      "extract": 0.820112,
+      "normalize": 0,
+      "critic": 0.041428,
+      "confidence": 0.144684
+    }
+  },
+  "liveSeconds": [
+    2.9545277560000005,
+    2.971819200000002,
+    2.99239054,
+    2.9944734610000014,
+    3.164159764,
+    3.1686956960000026,
+    3.1887010179999997,
+    3.1957763109999977,
+    3.498076559,
+    3.898661234000001
+  ],
+  "spentUsd": 0.144684,
+  "errors": [
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[0].ebitda_ltm",
+      "label": "Luori Inc.: ebitda_ltm",
+      "expected": 72400000,
+      "actual": 724000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[3].ebitda_ltm",
+      "label": "Tovbren Inc.: ebitda_ltm",
+      "expected": 22200000,
+      "actual": 222000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[6].ebitda_ltm",
+      "label": "Tracen Inc.: ebitda_ltm",
+      "expected": 17500000,
+      "actual": 175000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "nordkap-iii-2026q1-scan",
+      "path": "route",
+      "label": "route review, expected auto_post",
+      "key": true,
+      "expected": null,
+      "actual": null,
+      "step": 7
+    }
+  ]
+}

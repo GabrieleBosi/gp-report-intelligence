@@ -1,0 +1,8 @@
+{
+  "documents": 12,
+  "unsafe": 0,
+  "keyFigureAccuracy": 1,
+  "allFigureAccuracy": 0.9955621301775148,
+  "classificationAccuracy": 1,
+  "routeAccuracy": 0.9166666666666666
+}

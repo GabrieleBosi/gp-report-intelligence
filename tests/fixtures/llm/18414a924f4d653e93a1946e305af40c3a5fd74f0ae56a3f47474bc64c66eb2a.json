@@ -1,0 +1,22 @@
+{
+  "prompt": "classify@1",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "output": {
+    "gp_name": "Tessera Ventures",
+    "currency": "CHF",
+    "fund_name": "Tessera Seed Fund I",
+    "period_end": "2026-06-30",
+    "report_type": "quarterly_report",
+    "evidence_page": 1,
+    "unit_statement": "amounts in CHF k"
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "costUsd": 0.010652,
+    "inputTokens": 2188,
+    "outputTokens": 95,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  }
+}

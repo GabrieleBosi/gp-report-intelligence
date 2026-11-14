@@ -1,0 +1,147 @@
+{
+  "prompt": "extract-portfolio@1",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "output": {
+    "companies": [
+      {
+        "name": "Brenvikkas Inc.",
+        "country": "US",
+        "sector": "Data Infrastructure",
+        "investment_date": "2022-12-15",
+        "invested": {
+          "raw": "25,063,670",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "39,158,463",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "39,158,463",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1.56x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Phakasro Ltd",
+        "country": "GB",
+        "sector": "Cybersecurity",
+        "investment_date": "2021-07-15",
+        "invested": {
+          "raw": "47,104,703",
+          "page": 2
+        },
+        "realized": {
+          "raw": "17,233,799",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "44,877,941",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "62,111,740",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1.32x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Veltovro Inc.",
+        "country": "US",
+        "sector": "Software",
+        "investment_date": "2021-12-15",
+        "invested": {
+          "raw": "44,760,792",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "90,757,216",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "90,757,216",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2.03x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Taphamor Inc.",
+        "country": "US",
+        "sector": "Software",
+        "investment_date": "2021-11-15",
+        "invested": {
+          "raw": "30,121,753",
+          "page": 2
+        },
+        "realized": {
+          "raw": "33,767,738",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "24,469,999",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "58,237,737",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "1.93x",
+          "page": 2
+        }
+      },
+      {
+        "name": "Salmor Ltd",
+        "country": "GB",
+        "sector": "Data Infrastructure",
+        "investment_date": "2021-08-15",
+        "invested": {
+          "raw": "43,152,031",
+          "page": 2
+        },
+        "realized": {
+          "raw": "0",
+          "page": 2
+        },
+        "unrealized": {
+          "raw": "100,740,268",
+          "page": 2
+        },
+        "total_value": {
+          "raw": "100,740,268",
+          "page": 2
+        },
+        "gross_moic": {
+          "raw": "2.33x",
+          "page": 2
+        }
+      }
+    ]
+  },
+  "usage": {
+    "model": "claude-opus-5-5",
+    "inputTokens": 2948,
+    "outputTokens": 743,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.026652
+  }
+}

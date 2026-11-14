@@ -1,0 +1,131 @@
+{
+  "step": "extract",
+  "model": "claude-sonnet-5-5",
+  "baseline": {
+    "documents": 12,
+    "unsafe": 0,
+    "keyFigureAccuracy": 1,
+    "allFigureAccuracy": 0.9955621301775148,
+    "classificationAccuracy": 1,
+    "routeAccuracy": 0.9166666666666666
+  },
+  "candidate": {
+    "documents": 12,
+    "unsafe": 0,
+    "keyFigureAccuracy": 1,
+    "allFigureAccuracy": 0.9955621301775148,
+    "classificationAccuracy": 1,
+    "routeAccuracy": 0.9166666666666666
+  },
+  "baselineCostUsd": 0.820112,
+  "candidateCostUsd": 0.40799599999999997,
+  "verdict": "eligible",
+  "saving": 0.41,
+  "reason": "No gated metric is worse on the dev split; claude-sonnet-5-5 on extract saves $0.41 (50%) per pass. Switching changes production: ask first.",
+  "costByStep": {
+    "baseline": {
+      "classify": 0.135164,
+      "extract": 0.820112,
+      "normalize": 0,
+      "critic": 0.041428,
+      "confidence": 0.294528
+    },
+    "candidate": {
+      "classify": 0.135164,
+      "extract": 0.40799599999999997,
+      "normalize": 0,
+      "critic": 0.041428,
+      "confidence": 0.294528
+    }
+  },
+  "liveSeconds": [
+    1.7044107560000048,
+    1.7737745490000016,
+    1.942322650000002,
+    1.9580645189999997,
+    1.9773252069999945,
+    2.030665347000002,
+    2.0335171569999946,
+    2.0369542120000004,
+    2.0459157909999997,
+    2.1310345760000002,
+    2.164906363999995,
+    2.199250478000002,
+    2.248699603999998,
+    2.3600871889999997,
+    2.3761735529999988,
+    2.4199074130000007,
+    2.447459471,
+    2.453483932999996,
+    2.4767161009999983,
+    2.4932801620000027,
+    2.5240773790000004,
+    2.5420040510000037,
+    2.6177071399999985,
+    2.6484202540000004,
+    2.747867503,
+    3.1577175550000027,
+    3.158661362999992,
+    3.233160047999998,
+    3.258822079999998,
+    3.3253264379999963,
+    3.481060667,
+    3.5833115719999986,
+    3.8297619449999982,
+    3.8681525120000004,
+    3.926631294999999,
+    3.9275695109999997,
+    4.255267746999998,
+    4.281871545000002,
+    4.352526287000001,
+    4.662249107000004,
+    4.704655446999998,
+    4.908230545000002,
+    5.0194781939999995,
+    5.112507922999999,
+    5.325313543,
+    5.491646655999997,
+    5.492235516000001,
+    5.557358005000002,
+    5.822072638000002
+  ],
+  "spentUsd": 0.407996,
+  "errors": [
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[0].ebitda_ltm",
+      "label": "Luori Inc.: ebitda_ltm",
+      "expected": 72400000,
+      "actual": 724000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[3].ebitda_ltm",
+      "label": "Tovbren Inc.: ebitda_ltm",
+      "expected": 22200000,
+      "actual": 222000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "harbourline-ii-2025q3-tvpi-misprint-scan",
+      "path": "portfolio_companies[6].ebitda_ltm",
+      "label": "Tracen Inc.: ebitda_ltm",
+      "expected": 17500000,
+      "actual": 175000000,
+      "key": false,
+      "step": 3
+    },
+    {
+      "doc": "nordkap-iii-2026q1-scan",
+      "path": "route",
+      "label": "route review, expected auto_post",
+      "key": true,
+      "expected": null,
+      "actual": null,
+      "step": 7
+    }
+  ]
+}

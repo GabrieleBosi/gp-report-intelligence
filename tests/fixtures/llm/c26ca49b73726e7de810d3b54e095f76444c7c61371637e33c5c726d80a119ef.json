@@ -1,0 +1,20 @@
+{
+  "prompt": "extract-qualitative@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "output": {
+    "key_updates": [
+      "Velmira Inc. launched a cost programme targeting 150 bps of margin",
+      "Luori Inc. launched a cost programme targeting 150 bps of margin"
+    ],
+    "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 1647,
+    "outputTokens": 103,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.004324
+  }
+}

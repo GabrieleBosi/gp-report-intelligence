@@ -1,0 +1,22 @@
+{
+  "prompt": "classify@1",
+  "model": "claude-sonnet-5-5",
+  "effort": "low",
+  "output": {
+    "gp_name": "Alpenrose Capital",
+    "fund_name": "Alpenrose Buyout IV",
+    "period_end": "2025-09-30",
+    "report_type": "quarterly_report",
+    "currency": "EUR",
+    "unit_statement": "all amounts in EUR m unless stated otherwise",
+    "evidence_page": 1
+  },
+  "usage": {
+    "model": "claude-sonnet-5-5",
+    "inputTokens": 1849,
+    "outputTokens": 104,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "costUsd": 0.004738
+  }
+}

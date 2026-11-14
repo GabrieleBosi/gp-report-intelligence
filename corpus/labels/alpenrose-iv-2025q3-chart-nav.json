@@ -1,0 +1,454 @@
+{
+  "doc_id": "alpenrose-iv-2025q3-chart-nav",
+  "file": "corpus/docs/alpenrose-iv-2025q3-chart-nav.pdf",
+  "split": "dev",
+  "format": "native_pdf",
+  "expected": {
+    "classification": {
+      "gp_name": "Alpenrose Capital",
+      "fund_name": "Alpenrose Buyout IV",
+      "period_end": "2025-09-30",
+      "report_type": "quarterly_report",
+      "currency": "EUR"
+    },
+    "fund": {
+      "commitment": {
+        "value": 500000000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "paid_in": {
+        "value": 323900000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "unfunded": {
+        "value": 176100000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "distributions": {
+        "value": 34400000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "nav": {
+        "value": 431100000,
+        "currency": "EUR",
+        "source": {
+          "page": 1
+        }
+      },
+      "tvpi": {
+        "value": 1.44,
+        "source": {
+          "page": 1
+        }
+      },
+      "dpi": {
+        "value": 0.11,
+        "source": {
+          "page": 1
+        }
+      },
+      "rvpi": {
+        "value": 1.33,
+        "source": {
+          "page": 1
+        }
+      },
+      "net_irr": {
+        "value": 0.079,
+        "source": {
+          "page": 1
+        }
+      }
+    },
+    "portfolio_companies": [
+      {
+        "name": "Morlin GmbH",
+        "sector": "Business Services",
+        "country": "AT",
+        "investment_date": null,
+        "invested": {
+          "value": 35400000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 86600000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 86600000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.45,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 98500000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 12500000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": -5800000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Zelvelny GmbH",
+        "sector": "Business Services",
+        "country": "AT",
+        "investment_date": null,
+        "invested": {
+          "value": 60300000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 102200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 102200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.69,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 130200000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 36800000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 48500000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Quinkas GmbH",
+        "sector": "Healthcare",
+        "country": "DE",
+        "investment_date": null,
+        "invested": {
+          "value": 70200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 78500000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 78500000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.12,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 124600000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 31000000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 127000000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Zelluny GmbH",
+        "sector": "Healthcare",
+        "country": "AT",
+        "investment_date": null,
+        "invested": {
+          "value": 32400000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 45200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 45200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.4,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 106200000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 9800000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 14200000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Brenro AG",
+        "sector": "Industrials",
+        "country": "CH",
+        "investment_date": null,
+        "invested": {
+          "value": 48300000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 0,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 93700000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 93700000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 1.94,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 157100000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 28200000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 5100000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      },
+      {
+        "name": "Zelphatra GmbH",
+        "sector": "Healthcare",
+        "country": "AT",
+        "investment_date": null,
+        "invested": {
+          "value": 35800000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "realized": {
+          "value": 35500000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "unrealized": {
+          "value": 49700000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "total_value": {
+          "value": 85200000,
+          "currency": "EUR",
+          "source": {
+            "page": 2
+          }
+        },
+        "gross_moic": {
+          "value": 2.38,
+          "source": {
+            "page": 2
+          }
+        },
+        "revenue_ltm": {
+          "value": 83200000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "ebitda_ltm": {
+          "value": 11900000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        },
+        "net_debt": {
+          "value": 36900000,
+          "currency": "EUR",
+          "source": {
+            "page": 3
+          }
+        }
+      }
+    ],
+    "qualitative": {
+      "key_updates": [
+        "Zelvelny GmbH completed a bolt-on acquisition of a regional competitor",
+        "Zelvelny GmbH appointed a new CFO"
+      ],
+      "outlook": "We expect continued operational progress across the portfolio and selective exit opportunities in the next twelve months."
+    }
+  },
+  "expected_flags": [],
+  "expected_route": "review",
+  "trap": "chart_nav"
+}
