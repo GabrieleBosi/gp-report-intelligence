@@ -27,8 +27,9 @@ database holds residue from end-to-end tests that a public site would show as if
   before any database, storage or model call. "Owner access" in the header checks a key against `/api/health` before
   keeping it for the browser tab (`sessionStorage`). Page images in live mode are fetched with the key, since an
   `<img>` cannot send it.
-- **Backstops if the key leaks:** the daily model budget, and per-IP rate limits on every function with a path (a
-  refused request still costs an invocation), tighter on upload and pipeline runs. The key is rotated in Netlify.
+- **Backstops if the key leaks:** the daily model budget, and per-IP rate limits on the paths that spend or write
+  (the plan allows 5 rules), tighter on upload and pipeline runs. The key is rotated in Netlify. The read-only paths
+  are not limited: a flood of refused requests costs invocations but changes and spends nothing.
 
 ## Consequences
 - The default path costs $0 and changes nothing: no request from the public site reaches a function. A browser test on

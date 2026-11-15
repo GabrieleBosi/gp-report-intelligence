@@ -18,8 +18,4 @@ export default withAccess(async (_req: Request, context: Context) => {
   return json(report, report.status === "ok" ? 200 : 503);
 });
 
-// Per-IP limit (SPEC-public-release W2): a refused request still costs an invocation.
-export const config: Config = {
-  path: "/api/health",
-  rateLimit: { action: "rate_limit", aggregateBy: ["ip", "domain"], windowSize: 60, windowLimit: 60 },
-};
+export const config: Config = { path: "/api/health" };

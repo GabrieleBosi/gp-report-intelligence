@@ -75,8 +75,9 @@ who spend about 90 seconds on the README, the demo and one or two files. Enginee
   constant-time comparison against `LIVE_ACCESS_KEY` (at least 32 random characters, set by the owner in Netlify),
   `401` otherwise. The scheduled `keep-alive` has no path and is unchanged. The existing cross-site request guard stays.
 - **Backstops if the key leaks:** the daily model cap stays (`DAILY_LLM_BUDGET_USD`), and Netlify code-based rate
-  limits per IP go on every function with a path (a refused request is still an invocation): 60 a minute, and 10 in
-  3 minutes on `upload` and `run-pipeline-background`. *Widened from those two at the checkpoint C security review.*
+  limits per IP: 10 in 3 minutes on `upload` and `run-pipeline-background`, 60 a minute on `runs`, `review` and `post`.
+  *Widened to every function at the checkpoint C security review; cut back to these 5 on 2026-11-15, when the live
+  site showed that with 11 rules (the Pro plan allows 5 per project) none was enforced.*
 - **Database:** no change. Row security stays deny-all; the browser still never talks to Supabase.
 
 ### W3. Documentation

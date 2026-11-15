@@ -103,12 +103,14 @@ test("the page has an icon and a description, for the browser tab and link previ
   await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /PE fund reports|private equity fund reports/);
 });
 
-test("owner access on a host without the live functions refuses the key and the site stays public", async ({ page }) => {
+test("owner access refuses a key the live functions do not accept, and the site stays public", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Owner access" }).click();
   await page.getByLabel("Access key").fill("k".repeat(40));
   await page.getByRole("button", { name: "Use live mode" }).click();
-  await expect(page.getByRole("alert")).toHaveText("Live mode is not available here: the health check answered with a page, not the API.");
+  await expect(page.getByRole("alert")).toHaveText(process.env.PUBLIC_SITE_URL
+    ? "This needs the owner's access key. The public site reads a recorded snapshot." // the deployed functions' 401
+    : "Live mode is not available here: the health check answered with a page, not the API."); // a static build
   await page.reload();
   await expect(page.getByText(/^Recorded runs of the real pipeline/)).toBeVisible();
   apiCalls = apiCalls.filter((p) => p !== "/api/health"); // the one request owner access makes, on purpose

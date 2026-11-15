@@ -46,8 +46,4 @@ export default withAccess(async (_req: Request, context: Context) => {
   }
 });
 
-// Per-IP limit (SPEC-public-release W2): a refused request still costs an invocation.
-export const config: Config = {
-  path: "/api/runs/:id/pages/:page", method: ["GET"],
-  rateLimit: { action: "rate_limit", aggregateBy: ["ip", "domain"], windowSize: 60, windowLimit: 60 },
-};
+export const config: Config = { path: "/api/runs/:id/pages/:page", method: ["GET"] };
