@@ -26,3 +26,14 @@ export function supabaseProbes(client: SupabaseClient | null): Record<"db" | "st
     },
   };
 }
+
+// Every row of a table: PostgREST returns at most 1,000 rows per request, so read page by page in a stable order.
+export async function allRows<T>(db: SupabaseClient, table: string, columns: string, orderBy = "id"): Promise<T[]> {
+  const rows: T[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await db.from(table).select(columns).order(orderBy).range(from, from + 999);
+    if (error) throw new Error(`${table}: ${error.message}`);
+    rows.push(...(data as T[]));
+    if (data.length < 1000) return rows;
+  }
+}

@@ -8,7 +8,7 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { VISION_DPI } from "../core/pipeline/extract.ts";
 import { buildQueue } from "../core/review/queue.ts";
-import { computeMetrics } from "../core/showcase/metrics.ts";
+import { computeMetrics, METRIC_COLUMNS } from "../core/showcase/metrics.ts";
 import { RunView } from "../core/pipeline/run-view.ts";
 import type { PortfolioGroup } from "../core/posting/portfolio-view.ts";
 import { corpusOnly, corpusPortfolio, uuidsIn, type ExportRows, type LocalRun, type PortfolioEntry } from "../core/snapshot.ts";
@@ -16,7 +16,7 @@ import { createSupabasePostingLoader } from "../netlify/lib/posting-store.ts";
 import { createSupabaseReviewStore } from "../netlify/lib/review-store.ts";
 import { createSupabaseKnownFundRegistry } from "../netlify/lib/run-store.ts";
 import { countPages, renderPageToPng } from "../netlify/lib/pdf.ts";
-import { createAdminClient } from "../netlify/lib/supabase.ts";
+import { allRows, createAdminClient } from "../netlify/lib/supabase.ts";
 import { DEMO_RUNS } from "../src/showcase/content.ts";
 import { ROOT } from "../tests/support/dev-corpus.ts";
 
@@ -58,23 +58,17 @@ if (funds.status !== 200) throw new Error(`funds: HTTP ${funds.status}`);
 await save("api/review/funds.json", funds.body);
 
 // Metrics from the same rows the metrics function reads, without the upload.
-async function rows<T>(table: string, columns: string): Promise<T[]> {
-  const out: T[] = [];
-  for (let from = 0; ; from += 1000) {
-    const { data, error } = await db.from(table).select(columns).order("id").range(from, from + 999);
-    if (error) throw new Error(`${table}: ${error.message}`);
-    out.push(...(data as T[]));
-    if (data.length < 1000) return out;
-  }
-}
+// The metrics function's own columns (METRIC_COLUMNS), plus the key that ties each row to its document.
+const rows = <T>(table: keyof typeof METRIC_COLUMNS, key?: string) =>
+  allRows<T>(db, table, key ? `${METRIC_COLUMNS[table]}, ${key}` : METRIC_COLUMNS[table]);
 const exportRows: ExportRows = {
-  documents: await rows("documents", "id, source"),
-  pipeline_runs: await rows("pipeline_runs", "id, status, document_id"),
-  assessments: await rows("assessments", "run_id, round, route"),
-  review_decisions: await rows("review_decisions", "kind, run_id"),
-  postings: await rows("postings", "outcome, run_id"),
-  portfolio_records: await rows("portfolio_records", "version, source_run"),
-  usage_ledger: await rows("usage_ledger", "cost_usd, step, run_id"),
+  documents: await rows("documents", "id"),
+  pipeline_runs: await rows("pipeline_runs", "document_id"),
+  assessments: await rows("assessments"),
+  review_decisions: await rows("review_decisions", "run_id"),
+  postings: await rows("postings", "run_id"),
+  portfolio_records: await rows("portfolio_records", "source_run"),
+  usage_ledger: await rows("usage_ledger", "run_id"),
 };
 const corpusRows = corpusOnly(exportRows);
 await save("api/metrics.json", computeMetrics(corpusRows, new Date()));
@@ -121,7 +115,7 @@ for (const { run_id } of queue.items) {
   };
   await save(`local-runs/${run_id}.json`, local);
 }
-const entries = await rows<PortfolioEntry>("portfolio_records", "fund_id, period_end, version, source_run, figures_hash");
+const entries = await allRows<PortfolioEntry>(db, "portfolio_records", "fund_id, period_end, version, source_run, figures_hash");
 await save("portfolio-records.json", entries.filter((e) => runDocument.has(e.source_run)));
 
 // Page images, once per document.

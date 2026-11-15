@@ -8,7 +8,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { POLICY } from "../core/confidence/policy.ts";
 import { PIPELINE_VERSION } from "../core/pipeline/version.ts";
-import { createAdminClient } from "../netlify/lib/supabase.ts";
+import { allRows, createAdminClient } from "../netlify/lib/supabase.ts";
 import { ciSummary, commitsByDay, commitTypes, type BuildFacts, type CiRun } from "../src/showcase/facts.ts";
 import { ROOT } from "../tests/support/dev-corpus.ts";
 
@@ -38,13 +38,7 @@ process.loadEnvFile(path.join(ROOT, ".env"));
 const db = createAdminClient(process.env);
 let llm: BuildFacts["llm"] = null;
 if (db) {
-  const rows: { cost_usd: number; created_at: string }[] = [];
-  for (let from = 0; ; from += 1000) {
-    const { data, error } = await db.from("usage_ledger").select("cost_usd, created_at").order("created_at").range(from, from + 999);
-    if (error) throw new Error(`usage_ledger: ${error.message}`);
-    rows.push(...data);
-    if (data.length < 1000) break;
-  }
+  const rows = await allRows<{ cost_usd: number; created_at: string }>(db, "usage_ledger", "cost_usd, created_at", "created_at");
   llm = { calls: rows.length, costUsd: Math.round(rows.reduce((s, r) => s + Number(r.cost_usd), 0) * 100) / 100, first: rows[0]?.created_at ?? null };
 }
 
