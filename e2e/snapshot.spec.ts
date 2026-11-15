@@ -101,6 +101,11 @@ test("the page has an icon and a description, for the browser tab and link previ
   const icon = await request.get(href ?? "");
   expect(icon.headers()["content-type"]).toContain("image/svg+xml");
   await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /PE fund reports|private equity fund reports/);
+  // Link previews (LinkedIn, GitHub, chat apps) take the picture from og:image, an absolute URL on the public site.
+  const image = await page.locator('meta[property="og:image"]').getAttribute("content");
+  expect(image).toBe("https://gp-report-intelligence.netlify.app/og-image.png");
+  const local = await request.get(new URL(image ?? "").pathname);
+  expect(local.headers()["content-type"]).toContain("image/png");
 });
 
 test("owner access refuses a key the live functions do not accept, and the site stays public", async ({ page }) => {
