@@ -5,6 +5,7 @@ import type { ReviewRequest } from "../../core/review/api.ts";
 import { Metrics } from "../../core/showcase/metrics.ts";
 import { publicPostingError } from "../../core/posting/post.ts";
 import { isLive, liveKey } from "./access.ts";
+import { isJson } from "./json-response.ts";
 import { overlayPortfolio, overlayQueue, overlayRun, retryLocally, reviewLocally } from "./local-review.ts";
 
 export const DocumentsResponse = z.object({ documents: z.array(DocumentSummary) });
@@ -27,9 +28,7 @@ function live(path: string, init: RequestInit = {}): Promise<Response> {
 async function read(path: string, signal?: AbortSignal): Promise<Response> {
   if (isLive()) return live(path, { signal });
   const response = await fetch(`/snapshot${path}.json`, { signal });
-  // The host answers a missing file with the app's own page (the SPA fallback, status 200): treat it as missing.
-  const json = (response.headers.get("content-type") ?? "").includes("json");
-  return response.ok && !json ? new Response(null, { status: 404 }) : response;
+  return response.ok && !isJson(response) ? new Response(null, { status: 404 }) : response; // the SPA fallback: missing
 }
 
 // Page images: per document in the snapshot. Live, the page-image function renders them, and since an <img> cannot
@@ -44,15 +43,13 @@ export async function fetchPageImage(runId: string, page: number, signal?: Abort
   return response.blob();
 }
 
-// Checks a key against the live functions before the site switches to them. Any answer but 401 means the key was
-// accepted; a degraded backend (503) is reported, not refused.
+// Checks a key against the live functions before the site switches to them: only their JSON answer counts, and a
+// degraded backend (503) is reported, not refused.
 export async function verifyLiveKey(key: string): Promise<{ ok: true; warning?: string } | { ok: false; message: string }> {
   const response = await fetch("/api/health", { headers: { authorization: `Bearer ${key}` } });
   if (response.status === 401) return { ok: false, message: (await failure(response, "The key was refused")).message };
-  if (response.ok && !(response.headers.get("content-type") ?? "").includes("json")) {
-    return { ok: false, message: "Live mode is not available here: the health check answered with a page, not the API." };
-  }
-  if (response.ok) return { ok: true };
+  if (response.ok) return isJson(response) ? { ok: true }
+    : { ok: false, message: "Live mode is not available here: the health check answered with a page, not the API." };
   // 503 is the health check's own answer when a dependency is down: the key was accepted. Anything else means the live
   // functions are not there to check it (a 404 on a plain static server), so the key proves nothing.
   if (response.status === 503) return { ok: true, warning: "The live backend reports a problem (HTTP 503)." };

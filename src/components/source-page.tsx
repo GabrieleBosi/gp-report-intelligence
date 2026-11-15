@@ -15,10 +15,10 @@ function useLivePage(runId: string, page: number, enabled: boolean): { src: stri
     let url: string | null = null;
     fetchPageImage(runId, page, controller.signal).then((blob) => {
       url = URL.createObjectURL(blob);
-      setImage({ key: `${runId}:${page}`, url });
-    }, () => { if (!controller.signal.aborted) setImage({ key: `${runId}:${page}`, url: null }); });
+      setImage({ key, url });
+    }, () => { if (!controller.signal.aborted) setImage({ key, url: null }); });
     return () => { controller.abort(); if (url) URL.revokeObjectURL(url); };
-  }, [runId, page, enabled]);
+  }, [runId, page, key, enabled]);
   const current = image?.key === key ? image : null;
   return { src: current?.url ?? null, failed: current !== null && current.url === null };
 }

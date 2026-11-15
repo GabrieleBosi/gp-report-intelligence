@@ -7,13 +7,15 @@ import { PortfolioError, type PortfolioSystem, type PostingLog } from "../../cor
 import { groupRecords, toPortfolioRow, type PortfolioGroup, type PortfolioRecordView, type PortfolioRow } from "../../core/posting/portfolio-view.ts";
 import { err, ok, type Result } from "../../core/result.ts";
 import { handleReview, type ReviewApiResult } from "../../core/review/api.ts";
+import { queueCounts } from "../../core/review/queue.ts";
 import { buildReviewState } from "../../core/review/state.ts";
 import {
   applyReviewDecision, completePosting, portfolioPost, toStoredPosting, toStoredRun, type LocalRun, type PortfolioEntry,
 } from "../../core/snapshot.ts";
+import { isJson } from "./json-response.ts";
 
 const runs = new Map<string, LocalRun>(); // queued runs, loaded on first use, changed by decisions
-const loading = new Map<string, Promise<LocalRun | null>>(); // one load per run, however many requests wait for it
+const loading = new Map<string, Promise<void>>(); // one load per run, however many requests wait for it
 let entries: PortfolioEntry[] | null = null; // the portfolio system's records (key columns and figures hash)
 const postedRows: PortfolioRow[] = []; // records posted in this tab, as the portfolio page shows them
 
@@ -26,7 +28,7 @@ export function resetLocalReview() {
 
 async function snapshotJson<T>(file: string): Promise<T | null> {
   const response = await fetch(`/snapshot/${file}`);
-  return response.ok && (response.headers.get("content-type") ?? "").includes("json") ? (await response.json()) as T : null;
+  return response.ok && isJson(response) ? (await response.json()) as T : null;
 }
 
 async function localRun(runId: string): Promise<LocalRun | null> {
@@ -35,8 +37,7 @@ async function localRun(runId: string): Promise<LocalRun | null> {
   let load = loading.get(runId);
   if (!load) {
     load = snapshotJson<LocalRun>(`local-runs/${runId}.json`).then((loaded) => {
-      if (loaded && !runs.has(runId)) runs.set(runId, loaded);
-      return runs.get(runId) ?? null;
+      if (loaded && !runs.has(runId)) runs.set(runId, loaded); // never over a decision applied while this load ran
     });
     loading.set(runId, load);
   }
@@ -88,9 +89,7 @@ export function reviewLocally(runId: string, body: unknown): Promise<ReviewApiRe
   }, runId, body);
 }
 
-export async function retryLocally(runId: string) {
-  return post(runId);
-}
+export const retryLocally = post;
 
 // The recorded view of a run, with what this tab's decisions changed: status, decisions, the analyst's correction
 // round, and the posting.
@@ -114,10 +113,7 @@ export function overlayQueue<I extends { run_id: string; status: Waiting }>(queu
   const items = queue.items
     .map((item) => ({ ...item, status: (runs.get(item.run_id)?.run.status ?? item.status) as Waiting }))
     .filter((item) => item.status === "needs_review" || item.status === "needs_triage");
-  return { items, counts: {
-    needs_review: items.filter((i) => i.status === "needs_review").length,
-    needs_triage: items.filter((i) => i.status === "needs_triage").length,
-  } };
+  return { items, counts: queueCounts(items) };
 }
 
 // The portfolio with this tab's postings added, grouped as the API groups it: by fund id, since a report may spell the

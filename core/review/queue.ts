@@ -18,8 +18,9 @@ export function buildQueue(rows: QueueRow[]): Queue {
     .filter((r): r is QueueRow & { status: QueueItem["status"] } => WAITING.has(r.status))
     .sort((a, b) => a.created_at.localeCompare(b.created_at))
     .map((r) => ({ ...r, summary: r.reasons.length > 1 ? `${r.reasons[0]} (+${r.reasons.length - 1} more)` : (r.reasons[0] ?? "") }));
-  return {
-    items,
-    counts: { needs_review: items.filter((i) => i.status === "needs_review").length, needs_triage: items.filter((i) => i.status === "needs_triage").length },
-  };
+  return { items, counts: queueCounts(items) };
+}
+
+export function queueCounts(items: { status: string }[]): Record<"needs_review" | "needs_triage", number> {
+  return { needs_review: items.filter((i) => i.status === "needs_review").length, needs_triage: items.filter((i) => i.status === "needs_triage").length };
 }
